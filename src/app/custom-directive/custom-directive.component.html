@@ -1,0 +1,21 @@
+<h2>Criando variaveis de atributo</h2>
+
+<h3>deixa o background do botão amarelo</h3>
+<button yellowBackground>custom-directive works!!!</button>
+
+<h3>quanto o mouse entra no botão o background muda de cor</h3>
+<button highlightMouse>Passe com o mouse aqui</button>
+
+<h3>Diretivas input</h3>
+<p [highlight]="{defaultColor: 'gray', highlightColor: 'red'}">
+  Leia esse texto incrivel
+</p>
+
+<h2>Criando variaveis de estrutura</h2>
+
+<h3>Mostrar ou esconder cursos</h3>
+<div *ngIf="isVisible">Mostrar os cursos</div>
+<div *ngElse="isVisible">Não mostrar os cursos</div>
+<button (click)="toogleCourses()">
+  Clique aqui para mostrar ou não os cursos
+</button>

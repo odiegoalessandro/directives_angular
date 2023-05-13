@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="fontSize" />
+<button (click)="changeActive()" [ngStyle]="{
+    'background-color': (active ? 'blue' : 'gray'),
+    'color': (active ? 'white' : 'black'),
+    'font-weight': (active ? 'bold' : 'normal'),
+    'font-size': fontSize + 'px'}">
+  mudar atributo ativo
+</button>

@@ -1,0 +1,6 @@
+<button>
+  <i [ngClass]="{
+      'bi-star': !hasLiked,
+      'bi-star-fill': hasLiked
+    }" (click)="toggleLike()"></i>
+</button>

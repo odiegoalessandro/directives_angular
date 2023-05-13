@@ -1,0 +1,11 @@
+<h2>*ngIf</h2>
+<input type="text" (keyup.enter)="addCourse()" #courseInput />
+<div *ngIf="courses.length > 0; else empty">
+  <h3>Lista de cursos</h3>
+  <ul *ngFor="let course of courses">
+    <li>{{ course }}</li>
+  </ul>
+</div>
+<ng-template #empty>
+  <h3>Não existe nenhum curso para ser mostrado</h3>
+</ng-template>
